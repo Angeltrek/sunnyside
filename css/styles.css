@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --serif-font: 'Fraunces', serif;
+    --sans-serif-font: 'Barlow', sans-serif;
+    --grey-color: rgb(165, 165, 165);
+}
+
+header{
+    background-image: url("../images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+    font-family: var(--serif-font);
+}
+
+.nav-bars li{
+    display: inline-block;
+    margin: auto 1.5rem;
+}
+
+.nav-bars li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-btn{
+    border-radius: 2.5rem;
+    background-color: #fff;
+    font-family: var(--sans-serif-font);
+    font-size: 1rem;
+    color: #000;
+    width: 7rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-family: var(--serif-font);
+}
+
+.contact-btn:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.hamburger button:hover{
+    color: var(--grey-color);
+}
+
+.navmenu{
+    display: none;
+    position: relative;
+}
+
+.triangle{
+    position: absolute;
+    top: -3rem;
+    right: 5%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 3rem 3rem;
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.show-menu{
+    display: block;
+}
+
+h1{
+    font-family: var(--serif-font);
+    letter-spacing: 0.5rem;
+    position: relative;
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: 10%;
+}
+
+.arrow-down {
+    position: relative;
+    top: 20%;
+}
+
+.arrow-down img{
+    height: 150px;
+}
+
+body{
+    font-size: 1.2rem;
+    background-color: rgb(251, 238, 235);
+}
+
+.image-description{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-description div{
+    width: 50%;
+    height: 45rem;
+    flex-wrap: wrap;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description{
+    width: 50%;
+    line-height: 1.5;
+    position: relative;
+    top: 30%;
+}
+
+.description h2{
+    margin: 1rem auto;
+    font-family: var(--serif-font);
+    font-size: 2rem;
+    letter-spacing: 0.15rem;
+    font-weight: 900;
+}
+
+.description p{
+    margin: 2rem auto;
+    color: rgb(131, 131, 175);
+}
+
+.description a{
+    margin: 1rem auto;
+    font-family: var(--serif-font);
+    color: #000;
+    text-decoration: underline yellow solid 3px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.skills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill{
+    width: 50%;
+    height: 45rem;
+    text-align: center;
+}
+
+.skill-description{
+    width: 50%;
+    margin: auto;
+    position: relative;
+    bottom: 40%;
+}
+
+.skill-description h2{
+    margin: 30px auto;
+    font-family: var(--serif-font);
+    font-size: 2rem;
+}
+
+.skill-description p{
+    line-height: 1.5;
+}
+
+.skill img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photography{
+    color: rgb(70, 113, 153);
+}
+
+.graphic-design{
+    color: rgb(71, 104, 91);
+}
+
+.testimonials-title{
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    font-size: 1.5rem;
+    font-family: var(--serif-font);
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: var(--grey-color);
+}
+
+.client-testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5rem auto 15rem auto;
+}
+
+.testimony{
+    width: 33%;
+    line-height: 1.5;
+}
+
+.testimony img{
+    border-radius: 100%;
+    margin: 5rem auto 2rem auto;
+    object-fit: cover;
+}
+
+.testimony p{
+    margin: 4rem 1rem;
+    color: rgb(133, 133, 133);
+}
+
+.testimony span{
+    margin: auto;
+    display: block;
+    margin: 2rem auto;
+}
+
+.client-name{
+    color: rgb(51, 49, 59);
+}
+
+.client-job{
+    color: var(--grey-color);
+    font-size: 1rem;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.gallery .image{
+    height: 45rem;
+}
+
+.gallery .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 20ms all ease;
+}
+
+.gallery .image img:hover{
+    transition: 20ms all ease;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(112, 206, 183);
+}
+
+footer nav{
+    padding: 5rem;
+    width: 90%;
+    margin: auto;
+}
+
+footer ul{
+    margin: 5rem;
+}
+
+footer ul li{
+    display: inline;
+}
+
+footer li a{
+    color: rgb(60, 136, 113);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1400px){
+    .gallery{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+
+    .testimony{
+        width: 100%;
+    }
+
+    .skill{
+        width: 100%;
+    }
+
+    .skill-description{
+        width: 70%;
+    }
+
+    .image-description div
+    {
+        width: 100%;
+    }
+
+    .description-container{
+        display: block;
+        position: static;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .navmenu{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navbar .nav-bars ul{
+        display: none;
+    }
+
+    .nav-bars ul{
+        background-color: #fff;
+        width: 90%;
+        margin: auto;
+    }
+
+    .nav-bars li{
+        display: block;
+        margin: 2rem;
+    }
+
+    .nav-bars li a{
+        text-decoration: none;
+        color: var(--grey-color);
+        margin: 2rem;
+    }
+
+    .contact-btn{
+        background-color: rgb(255, 255, 87);
+        font-size: 1rem;
+        color: #000;
+        font-family: var(--serif-font);
+    }
+    
+}
+
+@media screen and (max-width: 670px) {
+
+    footer ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
